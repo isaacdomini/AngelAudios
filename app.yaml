@@ -1,0 +1,21 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+skip_files:
+  - node_modules/
+  - scss/
+  - package.json
+  - package-lock.json
+  - gulpfile.json
+  - README.md
+  - 
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+  secure: always
+
+- url: /(.*)
+  static_files: \1
+  upload: (.*)
+  secure: always
