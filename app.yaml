@@ -8,7 +8,7 @@ skip_files:
   - package-lock.json
   - gulpfile.json
   - README.md
-  - 
+  - scripts/
 handlers:
 - url: /
   static_files: index.html
